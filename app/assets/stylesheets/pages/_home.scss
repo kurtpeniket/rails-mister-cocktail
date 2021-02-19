@@ -1,1 +1,17 @@
 // Specific CSS for your home-page
+.w-100 {
+    width: 100% !important;
+    height: 100vh;
+  }
+
+#banner {
+    font-size: 7rem;
+}
+
+.carousel-caption {
+   margin-right: 40%; 
+}
+
+#carouselExampleIndicators {
+    position: relative;
+}
