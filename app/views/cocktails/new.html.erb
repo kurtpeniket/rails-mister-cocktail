@@ -1,6 +1,8 @@
-<h1>New cocktail page</h1>
-<%= simple_form_for(@cocktail) do |t| %>
-<%= t.label :name %>
-<%= t.text_field :name %>
-<%= t.submit %>
-<% end %>
+<div class="container">
+    <h1>New cocktail page</h1>
+    <%= simple_form_for(@cocktail) do |t| %>
+    <%= t.label :name %>
+    <%= t.text_field :name %>
+    <%= t.submit class: 'btn btn-primary' %>
+    <% end %>
+</div>

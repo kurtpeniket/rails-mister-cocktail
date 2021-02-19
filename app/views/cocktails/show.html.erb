@@ -1,9 +1,12 @@
-<h1><%= @cocktail.name %></h1>
-<p>
-    <% @cocktail.doses.each do |dose| %>
-        <%= dose.ingredient.name %>
-        <%= dose.description %>
-    <% end %>
-</p>
+<div class="container">
+    <h1><%= @cocktail.name %></h1>
+    <p>
+        <% @cocktail.doses.each do |dose| %>
+            <%= dose.ingredient.name %>
+            <%= dose.description %>
+        <% end %>
+    </p>
 
-<%= link_to 'Add dose', new_cocktail_dose_path(@cocktail) %>
+    <%= link_to 'Add dose', new_cocktail_dose_path(@cocktail), class: 'btn btn-primary' %>
+    <%= link_to 'Back to list', root_path, class: 'btn btn-secondary' %>
+</div>
