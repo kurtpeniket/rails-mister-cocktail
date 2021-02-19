@@ -14,6 +14,11 @@ class DosesController < ApplicationController
     else 
       render :new
   end
+
+  def destroy
+    @dose.destroy
+    redirect_to cocktail_path
+  end
 end
 
 private

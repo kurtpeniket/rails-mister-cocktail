@@ -40,3 +40,21 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
+
+<div class="container">
+    <% @cocktails.each do |cocktail| %>
+        <div class="card">
+             <img class="card-img-top" src="https://image.freepik.com/free-photo/classic-dry-cocktail-with-olives-black-background-copy-space_123827-12236.jpg" alt="Card image cap">
+             <div class="card-body">
+                <h5 class="card-title"><%= cocktail.name %></h5>
+                <p class="card-text">
+                    <% cocktail.doses.each do |dose| %>
+                        <%= dose.ingredient.name %>
+                        (<%= dose.description %>)
+                    <% end %>
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+    <% end %>
+</div>
