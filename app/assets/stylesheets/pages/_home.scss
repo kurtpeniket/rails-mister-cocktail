@@ -9,6 +9,17 @@
 }
 
 .carousel-caption {
-   margin-right: 45%; 
-   margin-bottom: 10%;
+    margin-right: 45%; 
+    margin-bottom: 10%;
+}
+
+#navbar {
+    position: absolute;
+    z-index: 10;
+    top: 15px;
+    right: 25px;
+}
+
+#intro {
+    // position: relative;
 }
