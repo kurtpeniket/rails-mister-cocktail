@@ -13,6 +13,7 @@ class CocktailsController < ApplicationController
     if @cocktail.save
       redirect_to cocktail_path(@cocktail)
     else 
+      # flash.now[:alert] = "Alert!"
       render :new
     end
   end

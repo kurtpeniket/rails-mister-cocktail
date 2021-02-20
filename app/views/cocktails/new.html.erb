@@ -1,8 +1,9 @@
 <div class="container">
-    <h1>New cocktail page</h1>
+    <h1>Add a cocktail</h1>
     <%= simple_form_for(@cocktail) do |t| %>
     <%= t.label :name %>
     <%= t.text_field :name %>
     <%= t.submit class: 'btn btn-primary' %>
     <% end %>
-</div>
+    <%= link_to 'Back to list', root_path, class: 'btn btn-secondary' %>
+ </div>
